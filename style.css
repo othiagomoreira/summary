@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap');
+
+:root {
+    /* Primary */
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+
+    /* Neutral */
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+
+    background: url(images/pattern-background-desktop.svg) no-repeat;
+    
+    background-color: var(--Pale-blue);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+main {
+    border-radius: 1rem;
+
+    width: 90vw;
+    max-width: 370px;
+
+    /* height: 90vh; */
+
+    background-color: var(--Very-pale-blue);
+}
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem; 
+    gap: 1rem;
+
+}
+
+section h2, p{
+    text-align: center;
+}
+
+section p {
+    color: var(--Desaturated-blue);
+}
+
+.annual-plan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+    background-color: hsl(225, 100%, 96%);
+    
+    padding: 1rem;
+    border-radius: 0.5rem; 
+}
+
+.annual-plan h3{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color:blueviolet;
+    font-weight: 500;
+}
+
+a:hover {
+    color: violet;
+}
+
+/* Botões ============== */
+
+button {
+    font-family: 'Red Hat Display', sans-serif;
+    padding: 1rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+button:nth-of-type(1){
+    color: #fff;
+    background-color: var(--Bright-blue);
+    box-shadow: 0px 5px 10px var(--Bright-blue)
+}
+
+button:nth-of-type(1):hover {
+    background-color: rgb(109, 111, 252);
+    box-shadow: 0px 5px 10px rgb(109, 111, 252);
+}
+
+button:nth-of-type(2){
+    color: var(--Desaturated-blue);
+    background: none;
+}
+
+button:nth-of-type(2):hover {
+    color: black;
+}
