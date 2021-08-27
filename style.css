@@ -22,6 +22,7 @@ body {
 
     background: url(images/pattern-background-desktop.svg) no-repeat;
     
+    background-size: 100%;
     background-color: var(--Pale-blue);
 
     display: flex;
@@ -42,7 +43,6 @@ main {
     width: 90vw;
     max-width: 370px;
 
-    /* height: 90vh; */
 
     background-color: var(--Very-pale-blue);
 }
@@ -64,7 +64,7 @@ section p {
     color: var(--Desaturated-blue);
 }
 
-.annual-plan {
+.container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -75,6 +75,11 @@ section p {
     padding: 1rem;
     border-radius: 0.5rem; 
 }
+.annual-plan {
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+}
 
 .annual-plan h3{
     font-size: 1rem;
@@ -82,13 +87,13 @@ section p {
 }
 
 a {
-    text-decoration: none;
-    color:blueviolet;
+    color: var(--Bright-blue);
     font-weight: 500;
 }
 
 a:hover {
-    color: violet;
+    opacity: 0.75;
+    text-decoration: none;
 }
 
 /* Botões ============== */
@@ -104,11 +109,11 @@ button {
 button:nth-of-type(1){
     color: #fff;
     background-color: var(--Bright-blue);
-    box-shadow: 0px 5px 10px var(--Bright-blue)
+    box-shadow: 10px 10px 25px var(--Bright-blue)
 }
 
 button:nth-of-type(1):hover {
-    background-color: rgb(109, 111, 252);
+    opacity: 0.75;
     box-shadow: 0px 5px 10px rgb(109, 111, 252);
 }
 
